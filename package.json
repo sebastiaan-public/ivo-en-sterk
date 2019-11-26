@@ -3,7 +3,7 @@
   "name": "ivo-en-sterk",
   "private": true,
   "scripts": {
-    "lint": "vue-cli-service lint",
+    "lint": "",
     "dev": "vue-cli-service serve --mode dev --port 8080",
     "build-acc": "vue-cli-service build --mode acc",
     "build-prd": "vue-cli-service build --mode prd",
@@ -86,11 +86,9 @@
     "webpack": "^4.41.2"
   },
   "gitHooks": {
-    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "*.{js,vue}": [
-      "vue-cli-service lint",
       "git add"
     ]
   }

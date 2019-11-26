@@ -37,20 +37,10 @@
 <script lang="ts">
   import { Vue, Component, Prop} from 'vue-property-decorator' 
   import { Getter, Mutation, Action } from 'vuex-class'
-  import { Howl } from 'howler'
+  import { stopFail } from '@/sounds'
 
   @Component({})
   export default class HomePage extends Vue {
-    
-    howl:any = null
-    created() {
-      this.howl = new Howl({
-        src: '/dennis_nedry_ahahah.mp3',
-        loop:true
-      })
-    }
-
-    activated() {this.howl.play()}
-    deactivated() {this.howl.stop()}
+    deactivated() { stopFail() }
   }
 </script>

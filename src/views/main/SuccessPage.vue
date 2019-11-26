@@ -21,18 +21,8 @@
 <script lang="ts">
   import { Vue, Component, Prop} from 'vue-property-decorator' 
   import { Getter, Mutation, Action } from 'vuex-class'
-  import { Howl } from 'howler'
-import { sleep } from '../../core/utilities/time'
 
   @Component({})
   export default class HomePage extends Vue {
-    
-    howl:any = null
-    async created() {
-      await sleep(500)
-      new Howl({
-        src: '/jee.mp3'
-      }).play()
-    }
   }
 </script>

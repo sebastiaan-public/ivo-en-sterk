@@ -74,6 +74,7 @@
   import { sleep } from '@/core/utilities/time'
   
   import { log, store, firebase } from '@/core'
+import { playSuccess, playFail } from '../../../sounds'
 
 
 
@@ -120,9 +121,11 @@
       await sleep(5000)
 
       if (this.password === '53785') {
+        playSuccess()
         this.$router.push('/5ucc355')
       }
       else {
+        playFail()
         this.$router.push('/fail')
       }
     }
