@@ -1,0 +1,13 @@
+{
+  "name": "SAS Senior Consultant",
+  "short_name": "SAS Senior Consultant",
+  "start_url": "https://acc-227-app-nl.netlify.com",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1C9586",
+  "theme_color": "#1C9586",
+  "lang": "nl-EN",
+  "description": "SAS Senior Consultant",
+  "splash_pages": null,
+  "icons": [ ]
+}

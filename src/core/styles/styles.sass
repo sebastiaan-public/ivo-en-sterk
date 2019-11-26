@@ -1,0 +1,58 @@
+@import 'mixins.sass'
+@import 'transitions.sass'
+
+
+html,body
+  //* Disables pull-to-refresh but allows overscroll glow effects:
+  overscroll-behavior-y: contain
+  
+  // * Prevent Edge swipe to go back behavior:
+  touch-action: manipulation
+  
+  // * Fixes drag bugs onolder Firefox version & fix bounce behavior iOS!
+  // ! requires prevent-scroll-freeze on scrollable elements
+  // position: fixed
+  
+// ! fix v-card title overflow
+.v-card__title
+  word-break: unset !important
+
+
+.hidden
+  display: none !important
+
+  
+.clickable:hover
+  cursor: pointer
+
+
+// * larger buttons
+.enlarge-click-area-vertical
+  @include enlarge-clickable-area(50%, 200%, 0%, 100%)
+
+.enlarge-click-area-ltb
+  @include enlarge-clickable-area(50%, 200%, 50%, 150%)
+
+.enlarge-click-area-ltr
+  @include enlarge-clickable-area(50%, 150%, 50%, 200%)
+
+.enlarge-click-area-lb
+  @include enlarge-clickable-area(0%, 150%, 50%, 150%)
+
+.enlarge-click-area-rb
+  @include enlarge-clickable-area(0%, 150%, 0%, 150%)
+
+.enlarge-click-area-lt
+  @include enlarge-clickable-area(50%, 150%, 50%, 150%)
+
+.enlarge-click-area-rt
+  @include enlarge-clickable-area(50%, 150%, 0%, 150%)
+
+.enlarge-click-area-all
+  @include enlarge-clickable-area(50%, 200%, 50%, 200%)
+
+.enlarge-click-area-round
+  @include enlarge-clickable-area(50%, 200%, 50%, 200%)
+  &::after
+    border-radius: 50%
+

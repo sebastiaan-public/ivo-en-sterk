@@ -1,0 +1,18 @@
+# Map general url to versioned url - Netlify DNS manages which version is leading
+https://www.acc.sas.expertscout.nl      https://sas.expertscout.nl              301
+https://www.acc.sas.expertscout.nl/*    https://sas.expertscout.nl/:splat       301
+
+https://acc.sas.expertscout.nl          https://sas.expertscout.nl              301
+https://acc.sas.expertscout.nl/*        https://sas.expertscout.nl/:splat       301
+
+https://www.sas.expertscout.nl          https://sas.expertscout.nl              301
+https://www.sas.expertscout.nl/*        https://sas.expertscout.nl/:splat       301
+
+https://www.expertscout.nl              https://sas.expertscout.nl              301
+https://www.expertscout.nl/*            https://sas.expertscout.nl/:splat       301
+
+https://expertscout.nl                  https://sas.expertscout.nl              301
+https://expertscout.nl/*                https://sas.expertscout.nl/:splat       301
+
+# All routes to Vue Router:
+/*                                    /index.html                             200
